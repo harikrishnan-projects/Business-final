@@ -1,114 +1,157 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const signinForm = document.getElementById("signin-form");
-  const forgotForm = document.getElementById("forgot-form");
-  const signupForm = document.getElementById("signup-form");
 
-  const sectionSignin = document.getElementById("signin-section");
-  const sectionForgot = document.getElementById("forgot-section");
-  const sectionSignup = document.getElementById("signup-section");
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Forms
+  const signinForm = document.getElementById('signin-form');
+  const forgotForm = document.getElementById('forgot-form');
+  const signupForm = document.getElementById('signup-form');
+
+  // Sections
+  const sectionSignin = document.getElementById('signin-section');
+  const sectionForgot = document.getElementById('forgot-section');
+  const sectionSignup = document.getElementById('signup-section');
+
+  // Links that switch sections
+  const elLinkForgot = document.getElementById('link-forgot');
+  const elLinkSignup = document.getElementById('link-signup');
+  const elBackFromForgot = document.getElementById('back-to-signin-from-forgot');
+  const elBackFromSignup = document.getElementById('back-to-signin-from-signup');
 
   function showSection(section) {
-    sectionSignin.style.display = "none";
-    sectionForgot.style.display = "none";
-    sectionSignup.style.display = "none";
-    section.style.display = "block";
+    // hide all
+    if (sectionSignin) sectionSignin.style.display = 'none';
+    if (sectionForgot)  sectionForgot.style.display  = 'none';
+    if (sectionSignup)  sectionSignup.style.display  = 'none';
+    // show requested
+    if (section) section.style.display = 'block';
   }
 
-  // Start by showing sign in
+  // Initialize: show sign-in
   showSection(sectionSignin);
 
-  /*** Sign In logic with clearing ***/
-  signinForm.addEventListener("submit", (ev) => {
-    ev.preventDefault();
+  /* ---------------- Sign In ---------------- */
+  if (signinForm) {
+    signinForm.addEventListener('submit', (ev) => {
+      ev.preventDefault();
 
-    const emailEl = document.getElementById("signin-email");
-    const passwordEl = document.getElementById("signin-password");
+      // Use browser constraint API
+      if (!signinForm.checkValidity()) {
+        signinForm.reportValidity();
+        alert('Please fill in all required fields correctly.');
+        return;
+      }
 
-    const email = emailEl.value.trim();
-    const password = passwordEl.value.trim();
+      // Optional extra checks
+      const emailEl = document.getElementById('signin-email');
+      const passwordEl = document.getElementById('signin-password');
 
-    if (!email || !password) {
-      alert("Please enter both email and password.");
-      return;
-    }
+      const email = emailEl ? emailEl.value.trim() : '';
+      const password = passwordEl ? passwordEl.value.trim() : '';
 
-    // Clear the inputs
-    emailEl.value = "";
-    passwordEl.value = "";
-    document.getElementById("remember-me").checked = false;
+      if (!email || !password) {
+        alert('Please enter both email and password.');
+        return;
+      }
 
-    // Decide redirection (demo logic)
-    if (email === "test@example.com" && password === "password") {
-      window.location.href = "./dashboard.html";
-    } else {
-      window.location.href = "./404.html";
-    }
-  });
+      // clear inputs
+      signinForm.reset();
 
-  /*** Forgot Password logic with clearing ***/
-  forgotForm.addEventListener("submit", (ev) => {
-    ev.preventDefault();
-    const forgotEmailEl = document.getElementById("forgot-email");
-    const email = forgotEmailEl.value.trim();
-    if (!email) {
-      alert("Please enter your email.");
-      return;
-    }
+      // redirect to 404 (per requirement)
+      window.location.href = './404.html';
+    });
+  }
 
-    // Clear the input
-    forgotEmailEl.value = "";
+  /* ---------------- Forgot Password ---------------- */
+  if (forgotForm) {
+    forgotForm.addEventListener('submit', (ev) => {
+      ev.preventDefault();
 
-    alert("We’ve sent a reset link to " + email + ".");
-    showSection(sectionSignin);
-  });
+      // HTML5 validation (type="email" + required)
+      if (!forgotForm.checkValidity()) {
+        forgotForm.reportValidity();
+        alert('Please enter a valid email address.');
+        return;
+      }
 
-  /*** Sign Up logic with clearing ***/
-  signupForm.addEventListener("submit", (ev) => {
-    ev.preventDefault();
-    const nameEl = document.getElementById("signup-name");
-    const emailEl = document.getElementById("signup-email");
-    const pwdEl = document.getElementById("signup-password");
-    const confirmEl = document.getElementById("signup-confirm");
+      const forgotEmailEl = document.getElementById('forgot-email');
+      const email = forgotEmailEl ? forgotEmailEl.value.trim() : '';
 
-    const name = nameEl.value.trim();
-    const email = emailEl.value.trim();
-    const pwd = pwdEl.value.trim();
-    const confirm = confirmEl.value.trim();
+      if (!email) {
+        alert('Please enter your email address.');
+        return;
+      }
 
-    if (!name || !email || !pwd || !confirm) {
-      alert("Please fill all fields.");
-      return;
-    }
-    if (pwd !== confirm) {
-      alert("Passwords do not match.");
-      return;
-    }
+      // clear the form inputs
+      forgotForm.reset();
 
-    // Clear inputs
-    nameEl.value = "";
-    emailEl.value = "";
-    pwdEl.value = "";
-    confirmEl.value = "";
+      // redirect to 404
+      window.location.href = './404.html';
+    });
+  }
 
-    alert(`Account created for ${name} (${email})`);
-    showSection(sectionSignin);
-  });
+  /* ---------------- Sign Up ---------------- */
+  if (signupForm) {
+    signupForm.addEventListener('submit', (ev) => {
+      ev.preventDefault();
 
-  // Anchor links to switch sections
-  document.getElementById("link-forgot").addEventListener("click", (ev) => {
-    ev.preventDefault();
-    showSection(sectionForgot);
-  });
-  document.getElementById("link-signup").addEventListener("click", (ev) => {
-    ev.preventDefault();
-    showSection(sectionSignup);
-  });
-  document.getElementById("back-to-signin-from-forgot").addEventListener("click", (ev) => {
-    ev.preventDefault();
-    showSection(sectionSignin);
-  });
-  document.getElementById("back-to-signin-from-signup").addEventListener("click", (ev) => {
-    ev.preventDefault();
-    showSection(sectionSignin);
-  });
+      if (!signupForm.checkValidity()) {
+        signupForm.reportValidity();
+        alert('Please fill all required fields correctly.');
+        return;
+      }
+
+      const nameEl = document.getElementById('signup-name');
+      const emailEl = document.getElementById('signup-email');
+      const pwdEl = document.getElementById('signup-password');
+      const confirmEl = document.getElementById('signup-confirm');
+
+      const name = nameEl ? nameEl.value.trim() : '';
+      const email = emailEl ? emailEl.value.trim() : '';
+      const pwd = pwdEl ? pwdEl.value.trim() : '';
+      const confirm = confirmEl ? confirmEl.value.trim() : '';
+
+      if (!name || !email || !pwd || !confirm) {
+        alert('Please fill all fields.');
+        return;
+      }
+
+      if (pwd !== confirm) {
+        alert('Passwords do not match.');
+        return;
+      }
+
+      // clear all fields
+      signupForm.reset();
+
+      // redirect to 404
+      window.location.href = './404.html';
+    });
+  }
+
+  /* -------------- Section Links (switch UI) -------------- */
+  if (elLinkForgot) {
+    elLinkForgot.addEventListener('click', (e) => {
+      e.preventDefault();
+      showSection(sectionForgot);
+    });
+  }
+  if (elLinkSignup) {
+    elLinkSignup.addEventListener('click', (e) => {
+      e.preventDefault();
+      showSection(sectionSignup);
+    });
+  }
+  if (elBackFromForgot) {
+    elBackFromForgot.addEventListener('click', (e) => {
+      e.preventDefault();
+      showSection(sectionSignin);
+    });
+  }
+  if (elBackFromSignup) {
+    elBackFromSignup.addEventListener('click', (e) => {
+      e.preventDefault();
+      showSection(sectionSignin);
+    });
+  }
+
 });

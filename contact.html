@@ -81,7 +81,7 @@
 
       <!-- Contact Form Column -->
       <div class="contact-form">
-        <form id="contactForm" action="#" method="post">
+        <form id="contactForm" action="#" method="post" novalidate>
           <div class="form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -99,8 +99,10 @@
             <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
           </div>
           <button type="button" class="btn-submit" id="sendBtn">Send Message</button>
+          <div id="errorMessage" style="color:red; margin-top:10px;"></div>
         </form>
       </div>
+
     </div>
   </div>
 </section>
@@ -152,17 +154,6 @@
 
 
 
-  <script>
-    const form = document.getElementById('contactForm');
-    const sendBtn = document.getElementById('sendBtn');
-
-    sendBtn.addEventListener('click', () => {
-      // Redirect (optional)
-      window.location.href = './404.html';
-      
-      // Clear all form fields
-      form.reset();
-    });
-  </script>
+  <script src="./contact.js"></script>
 </body>
 </html>

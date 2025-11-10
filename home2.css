@@ -477,6 +477,11 @@ span{
   text-decoration: none; */
 }
 
+.offer-features .container .services-grid .service-card:nth-child(1) p {
+  margin-bottom: 55px !important;
+  /* padding-top: 30px; */
+}
+
 .offer-features .container .services-grid .service-card:nth-child(2){
   background-color:rgb(6, 47, 91) ;
 }
