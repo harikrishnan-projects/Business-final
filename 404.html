@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Page Not Found</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f4f7fc;
+      color: #333;
+      font-family: "Poppins", sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+    .error-container {
+      max-width: 500px;
+      width: 100%;
+    }
+    .error-code {
+      font-size: 8rem;
+      font-weight: 700;
+      color: #ff6600;
+      margin-bottom: 1rem;
+    }
+    .error-message {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      line-height: 1.4;
+    }
+    .error-button {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff;
+      background-color: #ff6600;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .error-button:hover {
+      background-color: #e64d00;
+    }
+    @media (max-width: 480px) {
+      .error-code {
+        font-size: 5rem;
+      }
+      .error-message {
+        font-size: 1rem;
+      }
+      .error-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <h1 class="error-code">404</h1>
+    <p class="error-message">
+      Oops! The page you are looking for cannot be found.
+    </p>
+    <a class="error-button" href="/">Go Back Home</a>
+  </div>
+</body>
+</html>

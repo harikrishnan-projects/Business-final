@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background: linear-gradient( #a7eedb, #10ac84); */
+  /* background: url('./home\ page\ 2\ hero\ img.jpg') no-repeat center center / cover fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  /* background-color: #007bff; */
+  background-color: rgb(208, 205, 205);
+}
+
+.container {
+  /* background: white; */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  /* border: 3px solid white; */
+  /* border: 3px solid  #007bff; */
+  background-color:  #007bff;
+  /* backdrop-filter: blur(10px); */
+  animation: fadeIn 1s ease forwards;
+}
+
+.toggle-links {
+  margin-bottom: 15px;
+}
+
+.toggle-links a {
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.toggle-links a:hover {
+  /* color: red; */
+}
+
+.toggle-links a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: yellow;
+  left: 0;
+  bottom: -5px;
+  animation: underlineSlide 0.5s ease forwards;
+}
+
+#switchToSignup{
+  color: yellow;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+#switchToSignup:hover {
+  color: red;
+}
+
+#switchToSignin{
+  color: rgb(218, 170, 83);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#switchToSignin:hover {
+  color: red;
+}
+
+.toggle-links a.active {
+  border-bottom: 2px solid rgb(218, 170, 83);
+}
+
+/* ===== Form Styling ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: formSlide 0.8s ease forwards;
+  animation-delay: 0.5s; /* delay to animate after container */
+}
+
+input {
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #1dd1a1;
+  box-shadow: 0 0 8px rgba(29, 209, 161, 0.4);
+  transform: scale(1.02);
+}
+
+/* ===== Button Styling ===== */
+button {
+  padding: 12px;
+  background:rgb(208, 205, 205);
+  font-size: 1rem;
+  color:#007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background:white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Hidden Class Animation ===== */
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.form p{
+  color: white;
+}
+
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  0%   { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes formSlide {
+  0%   { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes underlineSlide {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+
+
+/* ===== Responsive for mobile (max-width: 450px) ===== */
+@media (max-width: 450px) {
+  body {
+    padding: 10px;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid yellow;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    margin-top: 200px;
+    margin-right: 65px;
+  }
+
+  .toggle-links a {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+
+  input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+    
+  }
+
+  .form {
+    animation-delay: 0.3s; /* faster on mobile */
+  }
+}

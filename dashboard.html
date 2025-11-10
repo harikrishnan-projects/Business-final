@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+  <title>Multi‑Business Dashboard</title>
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo">MyBiz Dashboard</div>
+    <div class="topbar‑right">
+      <a href="./index.html.html" class="home‑link">Home</a>
+      <!-- <input type="text" class="search‑input" placeholder="Search…"> -->
+      <div class="profile">Admin</div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <aside class="sidebar">
+      <ul class="menu">
+        <li class="menu‑item active" data‑section="dash">Dashboard</li>
+        <li class="menu‑item" data‑section="bizA">Business A</li>
+        <li class="menu‑item" data‑section="bizB">Business B</li>
+        <li class="menu‑item" data‑section="analytics">Analytics</li>
+        <li class="menu‑item" data‑section="settings">Settings</li>
+      </ul>
+    </aside>
+
+    <main class="main‑content">
+      <section id="dash" class="panel active">
+        <h2>Dashboard Overview</h2>
+        <div class="tiles">
+          <div class="tile green">
+            <h3>Revenue</h3>
+            <p>₹ 30,00,000</p>
+          </div>
+          <div class="tile blue">
+            <h3>New Leads</h3>
+            <p>1,120</p>
+          </div>
+          <div class="tile orange">
+            <h3>Projects</h3>
+            <p>57 Active</p>
+          </div>
+          <div class="tile red">
+            <h3>Issues</h3>
+            <p>8 Open</p>
+          </div>
+        </div>
+        <div class="section‑info">
+          <h4>Recent Activity</h4>
+          <ul class="info‑list">
+            <li>Lead “company_xyz” converted into Business B</li>
+            <li>Project “Skyline” moved into phase 2</li>
+            <li>Issue #342 resolved by team John</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="bizA" class="panel">
+        <h2>Business A</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Monthly Sales</h3>
+            <p>₹ 12,50,000</p>
+          </div>
+          <div class="card">
+            <h3>Customer Satisfaction</h3>
+            <p>83%</p>
+          </div>
+          <div class="card">
+            <h3>New Contracts</h3>
+            <p>24</p>
+          </div>
+        </div>
+        <div class="table‑wrapper">
+          <h4>Top Regions</h4>
+          <table class="table">
+            <thead><tr><th>Region</th><th>Sales</th></tr></thead>
+            <tbody>
+              <tr><td>Chennai</td><td>₹ 5,80,000</td></tr>
+              <tr><td>Bangalore</td><td>₹ 3,10,000</td></tr>
+              <tr><td>Hyderabad</td><td>₹ 2,00,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="bizB" class="panel">
+        <h2>Business B</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Active Subscriptions</h3>
+            <p>3,450</p>
+          </div>
+          <div class="card">
+            <h3>Churn Rate</h3>
+            <p>4.5%</p>
+          </div>
+          <div class="card">
+            <h3>MRR</h3>
+            <p>₹ 9,75,000</p>
+          </div>
+        </div>
+        <div class="chart‑placeholder">
+          [Chart goes here]
+        </div>
+      </section>
+
+      <section id="analytics" class="panel">
+        <h2 style="margin-top: 50px;">Analytics</h2>
+        <p>Detailed analytics coming soon. You can integrate charts, filters, date‑pickers here.</p>
+      </section>
+
+      <section id="settings" class="panel">
+        <h2>Settings</h2>
+        <div class="settings‑group">
+          <label><input type="checkbox" checked> Enable notifications</label><br>
+          <label><input type="checkbox"> Enable dark mode</label><br>
+          <button class="btn">Save Changes</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+
+
+
+
+
+  
+
+  <script>
+    const items = document.querySelectorAll('.menu‑item');
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelector('.menu‑item.active').classList.remove('active');
+        item.classList.add('active');
+        const sec = item.getAttribute('data‑section');
+        document.querySelector('.panel.active').classList.remove('active');
+        document.getElementById(sec).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
