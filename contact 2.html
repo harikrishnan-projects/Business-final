@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./logo.png" />
   <title>Business</title>
-  <link rel="stylesheet" href="./contact 2.css" />
+  <link rel="stylesheet" href="./contact.css" />
 </head>
 <body>
 
@@ -31,20 +31,25 @@
       <div class="navLinks">
         <ul class="linkRight">
           <li class="dropdown">
-            <a href="./home2.html">Home ▼</a>
+            <a href="./index.html.html">Home ▼</a>
             <ul class="dropdown-menu">
               <li><a href="./index.html.html">Home page 1</a></li>
             </ul>
           </li>
-          <li><a href="./team.html">Team & Achievements</a></li>
-          <li><a href="./awards.html">Awards / Certifications</a></li>
-          <li><a href="./blog.html">Blog & FAQs</a></li>
-          <li><a href="./login 2.css">Log In</a></li>
-          <li class="sign"><button onclick="window.location.href='./contact 2.html'">Contact Us → </button></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./choose.html">Why Choose Us</a></li>
+          <!-- <li><a href="./404.html">Team</a></li> -->
+          <!-- <li><a href="./blog.html">Blog</a></li> -->
+          <li><a href="./dashboard.html">DashBoard</a></li>
+          <li><a href="./login.html">Log In</a></li>
+          <li class="sign"><button onclick="window.location.href='./contact.html'">Contact Us → </button></li>
         </ul>
       </div>
     </nav>
   </div>
+
+
 
 
 
@@ -66,7 +71,7 @@
         </div>
         <div class="info-card">
           <h3>Email Us</h3>
-          <p><a href="mailto:hello@yourcompany.com">hello@yourcompany.com</a></p>
+          <p><a href="./404.html">hello@yourcompany.com</a></p>
         </div>
         <div class="info-card">
           <h3>Call Us</h3>
@@ -76,7 +81,7 @@
 
       <!-- Contact Form Column -->
       <div class="contact-form">
-        <form action="#" method="post">
+        <form id="contactForm" action="#" method="post">
           <div class="form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -93,12 +98,14 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
           </div>
-          <button type="submit" class="btn-submit">Send Message</button>
+          <button type="button" class="btn-submit" id="sendBtn">Send Message</button>
         </form>
       </div>
     </div>
   </div>
 </section>
+
+
 
 
 
@@ -145,6 +152,17 @@
 
 
 
-  <script src="./about.js"></script>
+  <script>
+    const form = document.getElementById('contactForm');
+    const sendBtn = document.getElementById('sendBtn');
+
+    sendBtn.addEventListener('click', () => {
+      // Redirect (optional)
+      window.location.href = './404.html';
+      
+      // Clear all form fields
+      form.reset();
+    });
+  </script>
 </body>
 </html>

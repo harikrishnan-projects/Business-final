@@ -44,15 +44,34 @@ body, html {
 /* Home link */
 .topbar .home‑link {
   text-decoration: none;
-  color: white;
+  color:red;
+  background-color:white;
   font-size: 1rem;
   padding: 6px 10px;
   border-radius: 4px;
   font-weight: bold;
   transition: background-color 0.3s;
+  animation: pulse 2s ease-in-out infinite; /* new line */
+}
+/* Define the pulse keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    /* optionally: box-shadow: 0 0 0 0 rgba(255,0,0,0.7); */
+  }
+  50% {
+    transform: scale(1.1);
+    /* optionally: box-shadow: 0 0 0 10px rgba(255,0,0,0); */
+  }
+  100% {
+    transform: scale(1);
+    /* optionally: box-shadow: 0 0 0 0 rgba(255,0,0,0); */
+  }
 }
 .topbar .home‑link:hover {
   background-color:red;
+  color: white;
+  transform: scale(1.1);
 }
 
 /* Search input */
@@ -74,9 +93,10 @@ body, html {
 }
 
 /* Profile section */
-.topbar .profile {
+.topbar .profile button {
   font-size: 0.9rem;
   color:white;
+  background-color: red;
   cursor: pointer;
   padding: 6px 10px;
   border-radius: 4px;
@@ -84,8 +104,8 @@ body, html {
   transition: background-color 0.3s, color 0.3s;
 }
 .topbar .profile:hover {
-  background-color: red;
-  color: #ffffff;
+  background-color:white !important;
+  color: red;
 }
 
 /* Adjust main content margin so it is not hidden under the topbar */
@@ -287,3 +307,83 @@ body, html {
 
 
 
+/* ✅ Responsive for Mobile ≤ 450px */
+@media (max-width: 450px) {
+
+  /* Fix layout overflow */
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .topbar .topbar-right {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+  }
+
+  /* Sidebar becomes top bar menu (full width) */
+  .sidebar {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .sidebar .menu-item {
+    font-size: 1.1rem;
+    padding: 12px;
+    text-align: center;
+  }
+
+  /* Main container stacks vertically */
+  .container {
+    flex-direction: column;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  /* Tiles become 1 column */
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .tile {
+    padding: 15px;
+  }
+
+  /* Cards become 1 per row */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  /* Table scroll if overflow */
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .table-wrapper table {
+    min-width: 350px;
+  }
+
+  .settings-group {
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

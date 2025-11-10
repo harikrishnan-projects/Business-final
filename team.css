@@ -65,12 +65,12 @@ span{
 }
 .header .contact .time>p{
     margin: 0;
-    font-size: 15px;
+    font-size: 13px;
     line-height:1px;
     font-weight: bold;
     cursor: pointer;
     /* color:white; */
-    color: #022f6c;
+    color: white;
      /* Animation */
     animation: pulse-effect 2s ease-in-out infinite;
 }
