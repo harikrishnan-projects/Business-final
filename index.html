@@ -2,474 +2,820 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./logo.png" />
-  <title>Business</title>
-  <link rel="stylesheet" href="./style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stackly Business</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
 
-  <div class="topbar">
-    <header class="header">
-      <div class="logo">
-        <img src="./logo.png" alt="STACKLY Logo" />
-        <h2>STACKLY</h2>
-      </div>
-      <div class="contact">
-        <div class="contact1">
-          <p class="phone"><a href="./404.html">+91 12345 67890</a></p>
-          <p class="email"><a href="./404.html">info@stackly.com</a></p>
-        </div>
-        <div class="time">
-          <p class="hours">Mon-Fri: 9 am-6 pm</p>
-        </div>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
-    </header>
+<!-- HEADER -->
+<header class="header" id="header">
 
-    <nav class="navBar">
-      <div class="navLinks">
-        <ul class="linkRight">
-          <li class="dropdown">
-            <a href="./index.html.html">Home ▼</a>
-            <ul class="dropdown-menu">
-              <li><a href="./home2.html">Home page 2</a></li>
-            </ul>
-          </li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./service.html">Services</a></li>
-          <li><a href="./choose.html">Why Choose Us</a></li>
-          <li><a href="./dashboard.html">DashBoard</a></li>
-          <li><a href="./login.html">Log In</a></li>
-          <li class="sign"><button onclick="window.location.href='./contact.html'">Contact Us → </button></li>
-        </ul>
-      </div>
-    </nav>
+  <div class="logo">
+    <a href="index.html">
+      <img src="Images/logo.webp" alt="Stackly Business Logo">
+    </a>
   </div>
 
-
-
-
-
-<section class="hero hero-consulting">
-  <div class="hero-inner">
-    <h1> <span>Accelerate Your Business Growth</span>  with Expert Consulting</h1>
-    <p>Our team of seasoned professionals partners with mid-to-large enterprises to deliver strategic transformation, operational excellence & sustained results.</p>
-    <div class="hero-cta">
-      <a href="./404.html" class="btn btn-primary">See Our Services</a>
-      <a href="./404.html" class="btn btn-secondary">Book a Free Strategy Call</a>
-    </div>
+  <!-- HAMBURGER (MOBILE ONLY) -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
-  <div class="animated-image">
-    <img src="./training.webp" alt="" height="300px" width="300px" class="anim-pulse">
-    <img src="./hero 2.webp" alt="" height="300px" width="300px" class="anim-pulse">
+
+  <!-- NAV -->
+  <nav class="nav" id="navMenu">
+
+    <div class="nav-item has-dropdown">
+
+  <div class="nav-link-wrap">
+    <a href="index.html" class="nav-link">Home</a>
+    <span class="dropdown-toggle">
+      <i class="fa-solid fa-chevron-down"></i>
+    </span>
   </div>
-</section>
 
+  <ul class="dropdown">
+    <li><a href="home2.html">Home 2</a></li>
+  </ul>
 
+</div>
 
-
-
-
-<section class="process-section">
-  <div class="container">
-    <h2 class="process-title"> <span>From Consultation to Delivery:</span> Our Approach</h2>
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="step-icon">1</div>
-        <h3 class="step-heading">Consult</h3>
-        <p class="step-text">We begin by understanding your business, goals and challenges.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-icon">2</div>
-        <h3 class="step-heading">Plan</h3>
-        <p class="step-text">We craft a detailed strategy tailored to your needs and timeline.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-icon">3</div>
-        <h3 class="step-heading">Execute & Support</h3>
-        <p class="step-text">We implement the solution and provide ongoing support for optimal results.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-<section class="business-lines-alt-section">
-  <div class="container">
-    <h2 class="business-lines-alt-title"> <span>Strategic Business Verticals</span> to Elevate Your Organization</h2>
-
-    <div class="business-line-row">
-      <div class="business-line-img">
-        <img src="./tech 1.webp" alt="Technology Solutions" height="200px" width="200px">
-      </div>
-      <div class="business-line-content">
-        <h3 class="business-line-heading">Technology Solutions</h3>
-        <p class="business-line-text">
-          End-to-end software development, automation, digital transformation & IT support for organizations.
-        </p>
-        <a href="./404.html" class="business-line-link">Learn More →</a>
-      </div>
-    </div>
-
-    <div class="business-line-row reverse">
-      <div class="business-line-img">
-        <img src="./consulting.webp" alt="Business Consulting">
-      </div>
-      <div class="business-line-content">
-        <h3 class="business-line-heading">Business Consulting</h3>
-        <p class="business-line-text">
-          Strategic planning, operations improvement, market entry, process optimization & organizational growth.
-        </p>
-        <a href="./404.html" class="business-line-link">Learn More →</a>
-      </div>
-    </div>
-
-    <div class="business-line-row">
-      <div class="business-line-img">
-        <img src="./marketing 1.webp" alt="Marketing & Branding">
-      </div>
-      <div class="business-line-content">
-        <h3 class="business-line-heading">Marketing & Branding</h3>
-        <p class="business-line-text">
-          Digital marketing, social media, creative campaigns, lead generation & branding solutions.
-        </p>
-        <a href="./404.html" class="business-line-link">Learn More →</a>
-      </div>
-    </div>
-
-    <div class="business-line-row reverse">
-      <div class="business-line-img">
-        <img src="./financial 1.webp" alt="Financial Services">
-      </div>
-      <div class="business-line-content">
-        <h3 class="business-line-heading">Financial Services</h3>
-        <p class="business-line-text">
-          Corporate finance, accounting, tax advisory, audits & investment guidance for businesses.
-        </p>
-        <a href="./404.html" class="business-line-link">Learn More →</a>
-      </div>
-    </div>
-
-    <div class="business-line-row">
-      <div class="business-line-img">
-        <img src="./training.webp" alt="Training & Development">
-      </div>
-      <div class="business-line-content">
-        <h3 class="business-line-heading">Training & Development</h3>
-        <p class="business-line-text">
-          Corporate training, skill development, leadership programs & workforce improvement.
-        </p>
-        <a href="./404.html" class="business-line-link">Learn More →</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-<section class="highlight-split-section">
-  <div class="container">
-    <h2 class="highlight-split-title">Our Achievements</h2>
-    <div class="slide-track">
-      <div class="highlight-split-row">
-        <div class="highlight-split-left">
-          <div class="highlight-num">120+</div>
-          <div class="highlight-desc">Properties Listed Across Chennai</div>
-        </div>
-        <div class="highlight-split-right">
-          <div class="highlight-num">98%</div>
-          <div class="highlight-desc">Client Satisfaction Rate</div>
-        </div>
-      </div>
-      <div class="highlight-split-row">
-        <div class="highlight-split-left">
-          <div class="highlight-num">150+</div>
-          <div class="highlight-desc">Enterprise Solutions Delivered Globally</div>
-        </div>
-        <div class="highlight-split-right">
-          <div class="highlight-num">97%</div>
-          <div class="highlight-desc">Retention Rate Across All Services</div>
-        </div>
-      </div>
-      <div class="highlight-split-row">
-        <div class="highlight-split-left">
-          <div class="highlight-num">4,000+</div>
-          <div class="highlight-desc">Projects Completed Across Industries</div>
-        </div>
-        <div class="highlight-split-right">
-          <div class="highlight-num">12</div>
-          <div class="highlight-desc">Years of Industry Experience</div>
-        </div>
-      </div>
-      <div class="highlight-split-row">
-        <div class="highlight-split-left">
-          <div class="highlight-num">35</div>
-          <div class="highlight-desc">Countries Served by Our Solutions</div>
-        </div>
-        <div class="highlight-split-right">
-          <div class="highlight-num">500+</div>
-          <div class="highlight-desc">Trusted Business Partners Worldwide</div>
-        </div>
-      </div>
-
+    <a href="about.html">About</a>
+    <a href="service.html">Service</a>
+    <a href="choose.html">Why Choose Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="dashboard.html">Dashboard</a>
     
-      <div class="highlight-split-row">
-        <div class="highlight-split-left">
-          <div class="highlight-num">120+</div>
-          <div class="highlight-desc">Properties Listed Across Chennai</div>
-        </div>
-        <div class="highlight-split-right">
-          <div class="highlight-num">98%</div>
-          <div class="highlight-desc">Client Satisfaction Rate</div>
-        </div>
-      </div>
-      <div class="highlight-split-row">
-        <div class="highlight-split-left">
-          <div class="highlight-num">150+</div>
-          <div class="highlight-desc">Enterprise Solutions Delivered Globally</div>
-        </div>
-        <div class="highlight-split-right">
-          <div class="highlight-num">97%</div>
-          <div class="highlight-desc">Retention Rate Across All Services</div>
-        </div>
-      </div>
     
-    </div>
-    <p class="highlight-split-text">We pride ourselves on delivering transparent service, local expertise and exceptional results for our clients.</p>
-  </div>
-</section>
+
+    <!-- MOBILE CONSULT BUTTON -->
+    <a href="login.html" class="consult-btn mobile-btn">Log In</a>
+
+  </nav>
+
+  <!-- DESKTOP CONSULT BUTTON -->
+  <a href="login.html" class="consult-btn desktop-btn">Log In</a>
+
+</header>
 
 
 
+<!-- HERO SLIDER -->
+<section class="hero">
+  <div class="slides">
 
-
-
-
-
-
-<section class="why-choose-us-multi">
-  <div class="container">
-    <h2 class="why-multi-title"> <span>Why Choose</span>  Our Platform</h2>
-    <div class="why-multi-cards">
-
-      <div class="why-multi-card">
-        <div class="why-multi-icon">💼</div>
-        <h3 class="why-multi-heading">One Platform, Many Businesses</h3>
-        <p class="why-multi-text">
-          Access services across technology, consulting, marketing, finance and training — all from a single trusted source.
+    <!-- SLIDE 1 -->
+    <div class="slide active" style="background-image:url('Images/hero1.webp')">
+      <div class="overlay"></div>
+      <div class="content fade">
+        <h1>DISCOVER THE WORLD<br>OF BUSINESS</h1>
+        <p>
+          Experience, accountability and innovation – all of which
+          is reflected in the quality of our results.
         </p>
-      </div>
-
-      <div class="why-multi-card">
-        <div class="why-multi-icon">🌐</div>
-        <h3 class="why-multi-heading">Expert Industry Knowledge</h3>
-        <p class="why-multi-text">
-          Our specialists bring deep experience in each vertical, helping you navigate complex business challenges with ease.
-        </p>
-      </div>
-
-      <div class="why-multi-card">
-        <div class="why-multi-icon">🧩</div>
-        <h3 class="why-multi-heading">Integrated Solutions & Seamless Service</h3>
-        <p class="why-multi-text">
-          From strategy to implementation and support — we deliver end-to-end solutions tailored to your needs.
-        </p>
-      </div>
-
-      <div class="why-multi-card">
-        <div class="why-multi-icon">🔍</div>
-        <h3 class="why-multi-heading">Transparent Pricing & Clear Value</h3>
-        <p class="why-multi-text">
-          No hidden fees, no surprises — just upfront, honest pricing with measurable return on your investment.
-        </p>
-      </div>
-
-      <div class="why-multi-card">
-        <div class="why-multi-icon">🤝</div>
-        <h3 class="why-multi-heading">Trusted Partnerships Across Verticals</h3>
-        <p class="why-multi-text">
-          We’ve built long-term relationships with clients across industries, backed by global standards and local execution.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="why-choose-alt-section">
-  <div class="container">
-    <h2 class="why-alt-title">Our Promise to You</h2>
-    <div class="why-alt-items">
-      <div class="why-alt-item">
-        <div class="why-alt-num">01</div>
-        <h3 class="why-alt-heading">Tailored Local Insight</h3>
-        <p class="why-alt-text">We bring hyper-local knowledge of Chennai &amp; Tamil Nadu property markets, so your strategy is built for your area.</p>
-      </div>
-      <div class="why-alt-item">
-        <div class="why-alt-num">02</div>
-        <h3 class="why-alt-heading">Seamless End-to-End Support</h3>
-        <p class="why-alt-text">From your first enquiry through the property hand-over and beyond, we’re by your side.</p>
-      </div>
-      <div class="why-alt-item">
-        <div class="why-alt-num">03</div>
-        <h3 class="why-alt-heading">Clear & Honest Costs</h3>
-        <p class="why-alt-text">What you see is what you pay — no hidden fees, no surprises, full transparency.</p>
-      </div>
-      <div class="why-alt-item">
-        <div class="why-alt-num">04</div>
-        <h3 class="why-alt-heading">Tech-Driven Efficiency</h3>
-        <p class="why-alt-text">We leverage the latest tools for listings, viewings and tracking to save you time and keep things moving.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-<section class="testimonials-section">
-  <div class="container">
-    <h2 class="testimonials-title">What <span>Our Clients Say</span> </h2>
-    <div class="testimonials-grid">
-
-      <div class="testimonial-item">
-        <div class="testimonial-photo">
-          <img src="./female 1.webp" alt="Client 1 Photo">
+        <div class="btns">
+          <a href="./404.html" class="btn primary" >Read More</a>
+          <a href="./404.html" class="btn outline">Contact Us</a>
         </div>
-        <p class="testimonial-quote">
-          “Working with Smart Realty was a game-changer for our property investment. Their local market insight and hands-on service made all the difference.”
-        </p>
-        <h3 class="testimonial-name">Asha Ravi</h3>
-        <span class="testimonial-company">Founder, ChennaiStartups</span>
       </div>
-
-      <div class="testimonial-item">
-        <div class="testimonial-photo">
-          <img src="./male 1.webp" alt="Client 2 Photo">
-        </div>
-        <p class="testimonial-quote">
-          “Their transparent pricing and full-service approach made our commercial leasing process smooth and stress-free. Highly recommend!”
-        </p>
-        <h3 class="testimonial-name">Karthik Menon</h3>
-        <span class="testimonial-company">CEO, Metro Retail Group</span>
-      </div>
-
-      <div class="testimonial-item">
-        <div class="testimonial-photo">
-          <img src="./female 2.webp" alt="Client 3 Photo">
-        </div>
-        <p class="testimonial-quote">
-          “From the first consultation to ongoing support – Smart Realty has been by our side. Their tech-driven tools kept us informed at every step.”
-        </p>
-        <h3 class="testimonial-name">Priya Sharma</h3>
-        <span class="testimonial-company">Director, PrimeProperties</span>
-      </div>
-
     </div>
-  </div>
-</section>
 
+    <!-- SLIDE 2 -->
+    <div class="slide" style="background-image:url('Images/hero2.webp')">
+      <div class="overlay"></div>
+      <div class="content fade">
+        <h1>MEET OUR BRAND NEW SOLUTION</h1>
+        <p>
+          Company provide outstanding service through teamwork
+          and innovation reflected in our results.
+        </p>
+        <div class="btns">
+          <a href="./404.html"  class="btn primary">Read More</a>
+          <a href="./404.html"  class="btn outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
 
+    <!-- SLIDE 3 -->
+    <div class="slide" style="background-image:url('Images/hero3.webp')">
+      <div class="overlay"></div>
+      <div class="content fade">
+        <h1>CONSULTING FOR SMALL BUSINESS</h1>
 
-
-
-
-
-
-
-<section class="cta-section">
-  <div class="cta-container">
-    <h2 class="cta-headline">Ready to Take the Next Step?</h2>
-    <p class="cta-subhead">
-      Reach out now for a free consultation and let’s build your success story together.
+         <p>
+      We help small businesses improve performance, manage risk,
+      and achieve sustainable growth through expert consulting
+      and audit solutions.
     </p>
-    <a href="./404.html" class="cta-button">Schedule a Consultation</a>
+        <div class="btns">
+          <a href="./404.html"  class="btn outline">Our Services</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 
+<section class="about-section">
 
+  <div class="about-header">
+    <h2>DISCOVER THE WORLD OF BUSINESS</h2>
+    <span class="line"></span>
+    <p>
+      We consider all the drivers of change from the ground up
+      and we’ll motivate you to make the change.
+    </p>
+  </div>
 
+  <div class="about-grid">
 
+    <!-- CARD 1 -->
+    <div class="about-card fade-up">
+      <div class="img-box">
+        <img src="Images/about1.webp" alt="About Company">
+      </div>
 
-
-
-<footer class="footer footer-consulting">
-  <div class="footer-inner">
-    <div class="footer-col about">
-      <h4>About Us</h4>
-      <p>We partner with leadership teams to transform operations & drive sustainable growth.</p>
+      <div class="about-content">
+        <h3>About Company</h3>
+        <p>
+          17 years of experience helping people to find
+          the best solutions.
+        </p>
+        <a href="./404.html">Read More</a>
+      </div>
     </div>
-    <div class="footer-col services">
-      <h4>Our Services</h4>
+
+    <!-- CARD 2 -->
+    <div class="about-card fade-up">
+      <div class="img-box">
+        <img src="Images/about2.webp" alt="Our Mission">
+      </div>
+
+      <div class="about-content">
+        <h3>Our Mission</h3>
+        <p>
+          Reducing risk and enhancing housing
+          finance market liquidity.
+        </p>
+        <a href="./404.html">Read More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="attribution-section">
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="Images/video.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay1"></div>
+
+  <div class="attr-content">
+
+    <!-- Heading -->
+    <div class="attr-header fade-up">
+      <h2>ATTRIBUTION</h2>
+      <span></span>
+    </div>
+
+    <!-- Cards -->
+    <div class="attr-grid">
+
+      <!-- Card 1 -->
+      <div class="attr-card fade-up">
+        <div class="icon">
+          <i class="fa-regular fa-lightbulb"></i>
+        </div>
+        <h3>UNIQUE IDEAS & SOLUTIONS</h3>
+        <p>
+          Experience in all the major geographies, meaning
+          we understand all underlying drivers.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="attr-card fade-up">
+        <div class="icon">
+          <i class="fa-solid fa-bullseye"></i>
+        </div>
+        <h3>TARGETING & POSITIONING</h3>
+        <p>
+          Generate new products with higher potential and
+          lower risks of failure.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="attr-card fade-up">
+        <div class="icon">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <h3>FRIENDLY CUSTOMER SERVICE</h3>
+        <p>
+          We build services for you from initial sketches
+          to the final production.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="services-section">
+
+  <!-- HEADER -->
+  <div class="services-header fade-up">
+    <h2>OUR SERVICES</h2>
+    <span class="line"></span>
+    <p>
+      We allow you to start without having to worry about making a
+      mistake, as we use our outstanding experience.
+    </p>
+  </div>
+
+  <!-- GRID -->
+  <div class="services-grid">
+
+    <!-- CARD 1 -->
+    <div class="service-card fade-up">
+      <img src="Images/service1.webp" alt="Investment Planning">
+
+      <div class="service-title">
+        Investment planning & strategy
+      </div>
+
+      <!-- HOVER -->
+      <div class="service-hover">
+        <i class="fa-solid fa-briefcase"></i>
+        <h3>Investment planning & strategy</h3>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="service-card fade-up">
+      <img src="Images/service2.webp" alt="International Business">
+
+      <div class="service-title">
+        International Business Opportunities
+      </div>
+
+      <div class="service-hover">
+        <i class="fa-solid fa-globe"></i>
+        <h3>International Business Opportunities</h3>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="service-card fade-up">
+      <img src="Images/service3.webp" alt="Strategic Approach">
+
+      <div class="service-title">
+        Strategic & commercial approach
+      </div>
+
+      <div class="service-hover">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Strategic & commercial approach</h3>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="service-card fade-up">
+      <img src="Images/service4.webp" alt="Business Solutions">
+
+      <div class="service-title">
+        Simple business answers and solutions
+      </div>
+
+      <div class="service-hover">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>Simple business answers and solutions</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="why-choose-us">
+
+  <!-- HEADER -->
+  <div class="why-title fade-up">
+    <h2>WHY CHOOSE US</h2>
+    <span></span>
+  </div>
+
+  <!-- GRID -->
+  <div class="why-wrapper">
+
+    <!-- ITEM 1 -->
+    <div class="why-box fade-up">
+      <div class="why-icon">
+        <i class="fa-solid fa-briefcase"></i>
+      </div>
+      <div class="why-content">
+        <h3>OPERATIONAL EXCELLENCE</h3>
+        <p>
+          Company provide outstanding service through teamwork,
+          accountability and innovation of which is reflected.
+        </p>
+      </div>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="why-box fade-up">
+      <div class="why-icon">
+        <i class="fa-solid fa-file-lines"></i>
+      </div>
+      <div class="why-content">
+        <h3>CONTINUOUS IMPROVEMENT</h3>
+        <p>
+          Teamwork, experience, accountability and innovation –
+          all of which is reflected in the quality of our results.
+        </p>
+      </div>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="why-box fade-up">
+      <div class="why-icon">
+        <i class="fa-solid fa-seedling"></i>
+      </div>
+      <div class="why-content">
+        <h3>INNOVATIVE SOLUTIONS</h3>
+        <p>
+          Experience, accountability and innovation –
+          all of which is reflected in the quality of our results.
+        </p>
+      </div>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="why-box fade-up">
+      <div class="why-icon">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </div>
+      <div class="why-content">
+        <h3>CERTIFIED EXPERTS</h3>
+        <p>
+          We work buy-side and sell-side – give our clients
+          hard-hitting answers and focus hard on the best opportunities.
+        </p>
+      </div>
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="why-box fade-up">
+      <div class="why-icon">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <div class="why-content">
+        <h3>TARGETING AND POSITIONING</h3>
+        <p>
+          Before we talk destination, we shine a spotlight across
+          your organization to fully understand its people and technology.
+        </p>
+      </div>
+    </div>
+
+    <!-- ITEM 6 -->
+    <div class="why-box fade-up">
+      <div class="why-icon">
+        <i class="fa-solid fa-chair"></i>
+      </div>
+      <div class="why-content">
+        <h3>PERSONAL APPROACH</h3>
+        <p>
+          We help entrepreneurs get their act together before they
+          talk to investors. Personal approach is a key factor.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="counter-section">
+
+  <!-- Background image -->
+  <div class="counter-bg"></div>
+
+  <!-- Pink overlay -->
+  <div class="counter-overlay"></div>
+
+  <!-- Content -->
+  <div class="counter-container">
+
+    <div class="counter-box fade-up">
+      <h2><span class="count" data-target="17">0</span>+</h2>
+      <p>Years of experience</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="counter-box fade-up">
+      <h2><span class="count" data-target="1267">0</span></h2>
+      <p>Satisfied customers</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="counter-box fade-up">
+      <h2><span class="count" data-target="278">0</span></h2>
+      <p>Finished projects</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="counter-box fade-up">
+      <h2><span class="count" data-target="350">0</span></h2>
+      <p>Employees worldwide</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="testimonial-section">
+
+  <!-- HEADER -->
+  <div class="testimonial-header fade-up">
+    <h2>WHAT PEOPLE SAY</h2>
+    <p>Find out why people love working with Stackly LLC</p>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <div class="testimonial-grid">
+
+    <!-- CARD 1 -->
+    <div class="testimonial-card fade-up">
+      <span class="quote">“</span>
+      <p>
+        Working with this consulting team has transformed our
+        business strategy and significantly improved our results.
+      </p>
+      <div class="client">
+        <img src="https://i.pravatar.cc/80?img=11" alt="">
+        <div>
+          <h4>Brooklyn Simmons</h4>
+          <span>Product Manager</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="testimonial-card fade-up">
+      <span class="quote">“</span>
+      <p>
+        Their professional approach and deep market knowledge
+        helped us make confident decisions at every step.
+      </p>
+      <div class="client">
+        <img src="https://i.pravatar.cc/80?img=32" alt="">
+        <div>
+          <h4>Ronald Richards</h4>
+          <span>Business Analyst</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="testimonial-card fade-up">
+      <span class="quote">“</span>
+      <p>
+        A reliable partner who understands our needs and delivers
+        innovative solutions with measurable impact.
+      </p>
+      <div class="client">
+        <img src="https://i.pravatar.cc/80?img=56" alt="">
+        <div>
+          <h4>Kristin Watson</h4>
+          <span>CEO, Startup Hub</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="logo-marquee">
+
+  <div class="marquee-track fade-up">
+
+    <!-- LOGOS (SET 1) -->
+    <div class="logo-item"><img src="Images/logo1.webp" alt="Motors"></div>
+    <div class="logo-item"><img src="Images/logo2.webp" alt="Smart University"></div>
+    <div class="logo-item"><img src="Images/logo3.webp" alt="Consulting"></div>
+    <div class="logo-item"><img src="Images/logo4.webp" alt="Happy Child"></div>
+    <div class="logo-item"><img src="Images/logo5.webp" alt="Master Study"></div>
+
+    <!-- LOGOS (SET 2 - DUPLICATE FOR LOOP) -->
+    <div class="logo-item"><img src="Images/logo1.webp"></div>
+    <div class="logo-item"><img src="Images/logo2.webp"></div>
+    <div class="logo-item"><img src="Images/logo3.webp"></div>
+    <div class="logo-item"><img src="Images/logo4.webp"></div>
+    <div class="logo-item"><img src="Images/logo5.webp"></div>
+
+  </div>
+
+</section>
+
+
+<section class="news-faq-section">
+
+  <div class="news-faq-container">
+
+    <!-- LEFT : RECENT NEWS -->
+    <div class="recent-news fade-up">
+
+      <h2>RECENT NEWS</h2>
+
+      <div class="news-item">
+        <img src="Images/blog3.webp" alt="">
+        <div>
+          <h4>Company launches new software channel</h4>
+          <span>📅 Nov 2, 2025</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="Images/blog2.webp" alt="">
+        <div>
+          <h4 class="active">Paves the way for an eventual merger</h4>
+          <span>📅 Nov 1, 2025</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="Images/blog1.webp" alt="">
+        <div>
+          <h4>Three quarters of construction workers victim of large-scale</h4>
+          <span>📅 Nov 21, 2025</span>
+        </div>
+      </div>
+
+      <a href="./404.html" class="news-btn">View more</a>
+    </div>
+
+    <!-- RIGHT : FAQ -->
+    <div class="faq-section fade-up">
+
+      <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+      <div class="faq-item active">
+        <div class="faq-title">
+          Project scheduling and management
+          <span class="arrow"></span>
+        </div>
+        <div class="faq-content">
+          <p>
+            We began our operations a few decades ago and have grown due to
+            excellent relationships with our clients. We started out small,
+            with just a few people and a small office, but today we have offices
+            in multiple countries with hundreds of people working inside them.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          Perform value engineering
+          <span class="arrow"></span>
+        </div>
+        <div class="faq-content">
+          <p>
+            We help organizations improve performance by analyzing functions,
+            costs, and alternative solutions to maximize value.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          Which finance consulting services you provide?
+          <span class="arrow"></span>
+        </div>
+        <div class="faq-content">
+          <p>
+            Our finance consulting includes investment planning, risk management,
+            budgeting, forecasting, and strategic financial advisory.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-title">
+          Fundamental analysis services
+          <span class="arrow"></span>
+        </div>
+        <div class="faq-content">
+          <p>
+            We provide in-depth market and business analysis to support informed
+            investment and strategic decisions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer class="site-footer">
+
+  <!-- TOP FOOTER -->
+  <div class="footer-top">
+
+    <!-- COLUMN 1 : LOGO + DESC -->
+    <div class="footer-col fade-up">
+      <button class="click" onclick="window.location.href='./index.html'">
+        <img src="images/logo.webp" alt="Stackly Logo" class="footer-logo">
+      </button>
+      
+      <p>
+        Stackly is a modern multipurpose business solution delivering
+        consulting, finance, and technology services worldwide.
+      </p>
+    </div>
+
+    <!-- COLUMN 2 : QUICK LINKS -->
+    <div class="footer-col fade-up">
+      <h4>Quick Links</h4>
       <ul>
-        <li><a href="./404.html">Strategic Consulting</a></li>
-        <li><a href="./404.html">Digital Transformation</a></li>
-        <li><a href="./404.html">Operations Excellence</a></li>
+        <li><a href="home2.html">Home 2</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="choose.html">Why Choose Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
-    <div class="footer-col contact">
+
+    <!-- COLUMN 3 : EXTRA -->
+    <div class="footer-col fade-up">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="team.html">Team & Achievement</a></li>
+        <li><a href="awards.html">Awards & certifications</a></li>
+        <li><a href="blog.html">blog & faq</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 4 : ADDRESS -->
+    <div class="footer-col fade-up">
       <h4>Contact</h4>
-      <p><a href="./404.html">+91 96882 80062</a></p>
-      <p><a href="./404.html">info@stackly.com</a></p>
-      <p>Chennai, Tamil Nadu, India</p>
+
+      <div class="footer-contact">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Salem, Tamilnadu</span>
+      </div>
+
+      <div class="footer-contact">
+        <i class="fa-solid fa-phone"></i>
+        <span>+91 1234567890</span>
+      </div>
+
+      <div class="footer-contact">
+        <i class="fa-solid fa-envelope"></i>
+        <span>info@business.com</span>
+      </div>
     </div>
-    <div class="footer-col follow">
-      <h4>Follow Us</h4>
-      <ul class="social">
-        <li><a href="./404.html"><img src="./linkedin.webp" alt="LinkedIn" height="30px"></a></li>
-        <li><a href="./404.html"><img src="./instagram.webp" alt="instagram" height="30px"></a></li>
-        <li><a href="./404.html"><img src="./twitter.webp" alt="twitter" height="30px"></a></li>
-        <li><a href="./404.html"><img src="./facebook.webp" alt="facebook" height="30px"></a></li>
-      </ul>
-    </div>
+
   </div>
+
+  <!-- BOTTOM FOOTER -->
   <div class="footer-bottom">
-    <p>© 2025 STACKLY. All rights reserved.</p>
-    <ul class="legal">
-      <li><a href="./404.html">Privacy Policy</a></li>
-      <li><a href="./404.html">Terms of Service</a></li>
-    </ul>
+    <p>
+      Copyright © 2025 All Reserved By Stackly
+    </p>
+
+    <div class="footer-social">
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
   </div>
+
 </footer>
 
 
 
-  <script src="./script.js"></script>
+
+
+
+
+
+<script>
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const title = item.querySelector('.faq-title');
+
+  title.addEventListener('click', () => {
+
+    if (item.classList.contains('active')) {
+      item.classList.remove('active');
+    } 
+    else {
+      faqItems.forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+    }
+
+  });
+});
+</script>
+
+
+
+
+
+
+
+<script>
+const counters = document.querySelectorAll('.count');
+let started = false;
+
+function startCounters() {
+  if (started) return;
+  started = true;
+
+  counters.forEach(counter => {
+    const target = +counter.dataset.target;
+    let current = 0;
+    const increment = target / 80;
+
+    const update = () => {
+      current += increment;
+      if (current < target) {
+        counter.innerText = Math.floor(current);
+        requestAnimationFrame(update);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    update();
+  });
+}
+
+window.addEventListener('scroll', () => {
+  const section = document.querySelector('.counter-section');
+  const sectionTop = section.getBoundingClientRect().top;
+  if (sectionTop < window.innerHeight - 100) {
+    startCounters();
+  }
+});
+</script>
+
+<script>
+  // Mobile menu toggle
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
+
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  }
+
+  // Dropdown toggle (Home)
+  document.querySelectorAll('.has-dropdown .nav-link-wrap').forEach(item => {
+    item.addEventListener('click', () => {
+      item.parentElement.classList.toggle('active');
+    });
+  });
+</script>
+
+
+<script>
+  const fadeElements = document.querySelectorAll(".fade-up");
+
+  const fadeObserver = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  fadeElements.forEach(el => fadeObserver.observe(el));
+</script>
+
+
+<script src="script.js"></script>
 </body>
 </html>

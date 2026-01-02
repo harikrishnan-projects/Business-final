@@ -1,283 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./logo.png" />
-  <title>Business</title>
-  <link rel="stylesheet" href="./home2.css" />
+  <meta charset="UTF-8">
+  <title>Stackly Business</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SAME CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- SAAS HERO CSS -->
+  <link rel="stylesheet" href="home2.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <div class="topbar">
-    <header class="header">
-      <div class="logo">
-        <img src="./logo.png" alt="STACKLY Logo" />
-        <h2>STACKLY</h2>
-      </div>
-      <div class="contact">
-        <div class="contact1">
-          <p class="phone"><a href="./404.html">+91 12345 67890</a></p>
-          <p class="email"><a href="./404.html">info@stackly.com</a></p>
-        </div>
-        <div class="time">
-          <p class="hours">Mon-Fri: 9 am-6 pm</p>
-        </div>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
-    </header>
+<header class="header" id="header">
 
-    <nav class="navBar">
-      <div class="navLinks">
-        <ul class="linkRight">
-          <li class="dropdown">
-            <a href="./home2.html">Home ▼</a>
-            <ul class="dropdown-menu">
-              <li><a href="./index.html.html">Home page 1</a></li>
-            </ul>
-          </li>
-          <li><a href="./team.html">Team & Achievements</a></li>
-          <li><a href="./awards.html">Awards / Certifications</a></li>
-          <li><a href="./blog.html">Blog & FAQs</a></li>
-          <li><a href="./login 2.html">Log In</a></li>
-          <li class="sign"><button onclick="window.location.href='./contact 2.html'">Contact Us → </button></li>
-        </ul>
-      </div>
-    </nav>
+  <div class="logo">
+    <a href="home2.html">
+      <img src="Images/logo.webp" alt="Stackly Business Logo">
+    </a>
   </div>
 
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navMenu">
+
+    <div class="nav-item has-dropdown">
+
+  <div class="nav-link-wrap">
+    <a href="home2.html" class="nav-link">Home</a>
+    <span class="dropdown-toggle">
+      <i class="fa-solid fa-chevron-down"></i>
+    </span>
+  </div>
+
+  <ul class="dropdown">
+    <li><a href="index.html">Home 1</a></li>
+  </ul>
+
+</div>
+
+    <a href="team.html">Team & Achievement</a>
+    <a href="awards.html">Awards & certifications</a>
+    <a href="blog.html">blog & faq</a>
+    <a href="contact 2.html">Contact Us</a>
+    <a href="dashboard.html">Dashboard</a>
+    
+
+    <a href="login 2.html" class="consult-btn mobile-btn">Consulting</a>
+
+  </nav>
+
+  <a href="login 2.html" class="consult-btn desktop-btn">Consulting</a>
+
+</header>
+
+<section class="saas-hero">
+
+  <video autoplay muted loop playsinline class="saas-video">
+    <source src="Images1/hero.mp4" type="video/mp4">
+  </video>
 
 
+  <div class="saas-overlay"></div>
+
+  <div class="saas-slides">
 
 
+    <div class="saas-slide active">
+      <h1>Scalable Solutions<br><span>For Modern Businesses</span></h1>
+      <p>
+        Build fast, reliable, and scalable cloud platforms
+        that grow with your business.
+      </p>
+
+      <div class="saas-points">
+        <span><i class="fa-solid fa-cloud"></i> Cloud Native</span>
+        <span><i class="fa-solid fa-shield-halved"></i> Secure</span>
+        <span><i class="fa-solid fa-chart-line"></i> High Performance</span>
+      </div>
+
+      <div class="saas-btns">
+        <a class="btn primary">Get Started</a>
+        <a class="btn outline">Request Demo</a>
+      </div>
+    </div>
+
+    <div class="saas-slide">
+      <h1>Powerful Analytics<br><span>Driven by Data</span></h1>
+      <p>
+        Make smarter decisions with real-time analytics
+        and actionable business insights.
+      </p>
+
+      <div class="saas-points">
+        <span><i class="fa-solid fa-database"></i> Real-Time Data</span>
+        <span><i class="fa-solid fa-chart-pie"></i> Visual Reports</span>
+        <span><i class="fa-solid fa-bolt"></i> Faster Decisions</span>
+      </div>
+
+      <div class="saas-btns">
+        <a class="btn primary">View Features</a>
+        <a class="btn outline">Contact Sales</a>
+      </div>
+    </div>
+
+    <div class="saas-slide">
+      <h1>Enterprise-Grade Security<br><span>You Can Trust</span></h1>
+      <p>
+        Protect your users, data, and infrastructure
+        with advanced security standards.
+      </p>
+
+      <div class="saas-points">
+        <span><i class="fa-solid fa-lock"></i> Data Protection</span>
+        <span><i class="fa-solid fa-user-shield"></i> Access Control</span>
+        <span><i class="fa-solid fa-certificate"></i> Compliance Ready</span>
+      </div>
+
+      <div class="saas-btns">
+        <a class="btn primary">Learn More</a>
+        <a class="btn outline">Talk to Expert</a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
-<section class="hero hero-corporate">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Make Bold Moves. Multiply Your Impact</h1>
-      <p>Our innovative approach and expert guidance empower you to seize opportunities, expand reach and lead your market.</p>
-      <a href="./404.html" class="btn-primary">Get Started</a>
+<section class="strategy-section">
+
+  <!-- TOP STEPS -->
+  <div class="strategy-steps">
+
+    <div class="step-item fade-up">
+      <span class="step-num">1.</span>
+      <div>
+        <h4>PRACTICAL BOOKING FUNCTIONALITY</h4>
+        <p>
+          Iterative approaches to corporate strategy foster collaborative
+          thinking to further the overall value proposition.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-item fade-up">
+      <span class="step-num">2.</span>
+      <div>
+        <h4>IN REAL-TIME BOOKING</h4>
+        <p>
+          Organically grow the holistic world view of disruptive innovation
+          via workplace diversity and empowerment.
+        </p>
+      </div>
+    </div>
+
+    <div class="step-item fade-up">
+      <span class="step-num">3.</span>
+      <div>
+        <h4>SOCIAL MEDIA INTEGRATION</h4>
+        <p>
+          Nanotechnology immersion along the information highway will close
+          the loop on focusing solely on the bottom line.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="strategy-content">
+
+    <!-- IMAGE -->
+    <div class="strategy-image fade-up">
+      <img src="Images1/strategies.webp" alt="Strategy">
+    </div>
+
+    <!-- TEXT -->
+    <div class="strategy-text fade-up">
+      <h2>
+        BRING TO THE TABLE WIN-WIN SURVIVAL
+        STRATEGIES TO ENSURE PROACTIVE.
+      </h2>
+
+      <p>
+        Leverage agile frameworks to provide a robust synopsis for high level
+        overviews. Iterative approaches to corporate strategy foster
+        collaborative thinking to further the overall value proposition.
+      </p>
+
+      <a href="#" class="strategy-btn">Read More</a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="video-banner">
+  <div class="video-banner-bg">
+    <img src="Images1/video-banner.webp" alt="Business discussion">
+  </div>
+
+  <div class="video-banner-overlay"></div>
+
+  <div class="video-banner-content">
+    <h2>
+      HOW WE START BUSINESS WITH NO <br>
+      MONEY IN DAD’S GARAGE
+    </h2>
+
+    <a href="#" class="video-banner-btn">
+      Watch video
+    </a>
+  </div>
+
+</section>
+
+<section class="what-we-do">
+  <div class="wwd-header fade-up">
+    <h2>WHAT WE DO</h2>
+    <span class="wwd-line"></span>
+  </div>
+
+  <div class="wwd-grid">
+
+    <!-- CARD 1 -->
+    <div class="wwd-card fade-up">
+      <div class="wwd-icon">
+        <i class="fa-solid fa-lightbulb"></i>
+      </div>
+      <h3>PLANNING & RESEARCH</h3>
+      <p>
+        It’s never been so easy to get your website up and running in 15 minutes!
+        Our expert planning ensures the right foundation.
+      </p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="wwd-card fade-up">
+      <div class="wwd-icon">
+        <i class="fa-solid fa-chart-pie"></i>
+      </div>
+      <h3>FINANCIAL PLAN</h3>
+      <p>
+        We design financial strategies that help your business grow steadily
+        with data-driven insights.
+      </p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="wwd-card fade-up">
+      <div class="wwd-icon">
+        <i class="fa-solid fa-briefcase"></i>
+      </div>
+      <h3>BUSINESS MANAGEMENT</h3>
+      <p>
+        Streamline operations, manage resources efficiently, and scale your
+        business with confidence.
+      </p>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="wwd-card fade-up">
+      <div class="wwd-icon">
+        <i class="fa-solid fa-rocket"></i>
+      </div>
+      <h3>INNOVATION / TRAINING</h3>
+      <p>
+        We empower teams with modern tools and training to stay ahead in a
+        fast-evolving market.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="business-quote-section">
+  <div class="quote-overlay"></div>
+
+  <div class="quote-content fade-up">
+    <h2>
+      WE BELIEVE THAT WHEN YOU IDENTIFY BUSINESS CHALLENGES<br>
+      AND DELIVER PRACTICAL SOLUTIONS,
+      <span>ORGANIZATIONS ARE EMPOWERED TO GROW.</span>
+    </h2>
+
+    <p class="quote-author">
+      — Strategic Business Solutions Team
+    </p>
+  </div>
+</section>
+
+<section class="business-normal">
+
+  <div class="bn-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="bn-left fade-up">
+      <h2>
+        AT THE END OF THE DAY, GOING FORWARD, A <br>
+        <span>NEW NORMAL.</span>
+      </h2>
+
+      <p>
+        Podcasting operational change management inside of workflows to
+        establish a framework. Taking seamless key performance indicators
+        offline to maximise the long tail.
+      </p>
+
+      <ul>
+        <li>Collaboratively administrate empowered markets via plug-and-play.</li>
+        <li>Dynamically procrastinate B2C users after installed base benefits.</li>
+        <li>Dramatically visualize customer directed convergence.</li>
+        <li>Organically grow the holistic view of disruptive innovation.</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT FEATURES -->
+    <div class="bn-right fade-up">
+
+      <div class="bn-feature">
+        <i class="fa-solid fa-chart-pie"></i>
+        <h4>OPERATIONAL EXCELLENCE</h4>
+        <p>Bring to the table win-win survival strategies.</p>
+      </div>
+
+      <div class="bn-feature">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <h4>INNOVATIVE SOLUTIONS</h4>
+        <p>Operational change management inside workflows.</p>
+      </div>
+
+      <div class="bn-feature">
+        <i class="fa-regular fa-heart"></i>
+        <h4>TARGETING AND POSITIONING</h4>
+        <p>Capitalize on low hanging fruit to identify value.</p>
+      </div>
+
+      <div class="bn-feature">
+        <i class="fa-solid fa-paper-plane"></i>
+        <h4>BEST SUPPORT</h4>
+        <p>Override the digital divide with DevOps support.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- COUNTERS -->
+  <div class="bn-counter fade-up">
+    <div>
+      <h3>520</h3>
+      <span>during projects</span>
     </div>
     <div>
-      <img src="./home2_hero.webp" alt="" height="300px" width="300px">
+      <h3>+30K</h3>
+      <span>finished projects</span>
     </div>
+    <div>
+      <h3>735</h3>
+      <span>happy clients</span>
+    </div>
+    <div>
+      <h3>15,528</h3>
+      <span>work hours</span>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="cta-strip">
+  <div class="cta-container fade-up">
+    <h2>
+      SCALE YOUR BUSINESS WITH SMART STRATEGY,  
+      DATA-DRIVEN DECISIONS & REAL RESULTS.
+    </h2>
+
+    <a href="#" class="cta-btn">Read More</a>
+  </div>
+</section>
+
+<section class="clients-say">
+  <div class="clients-header fade-up">
+    <h2>CLIENTS SAY</h2>
+    <span class="title-line"></span>
+  </div>
+
+  <div class="testimonial-wrapper">
+
+    <!-- CARD 1 -->
+    <div class="testimonial-box fade-up">
+      <span class="quote">“</span>
+      <p>
+        Stackly helped us redefine our business strategy. Their consulting approach is practical
+        and result-oriented.
+      </p>
+      <div class="client-info">
+        <img src="https://i.pravatar.cc/150?img=11" alt="Client">
+        <div>
+          <h4>Arjun Mehta</h4>
+          <span>Startup Founder</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="testimonial-box fade-up">
+      <span class="quote">“</span>
+      <p>
+        The team delivered innovative solutions that improved our
+        operational efficiency and customer satisfaction significantly.
+      </p>
+      <div class="client-info">
+        <img src="https://i.pravatar.cc/150?img=32" alt="Client">
+        <div>
+          <h4>Priya Sharma</h4>
+          <span>Operations Manager</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="testimonial-box fade-up">
+      <span class="quote">“</span>
+      <p>
+        Their strategic insights and hands-on execution helped us scale
+        faster while maintaining long-term stability.
+      </p>
+      <div class="client-info">
+        <img src="https://i.pravatar.cc/150?img=47" alt="Client">
+        <div>
+          <h4>Rahul Verma</h4>
+          <span>Business Consultant</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="testimonial-box fade-up">
+      <span class="quote">“</span>
+      <p>
+        Professional, transparent, and focused on real value.
+        Stackly has become a trusted partner for our growth.
+      </p>
+      <div class="client-info">
+        <img src="https://i.pravatar.cc/150?img=56" alt="Client">
+        <div>
+          <h4>Ananya Rao</h4>
+          <span>Product Lead</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
 
+<footer class="site-footer">
 
+  <!-- TOP FOOTER -->
+  <div class="footer-top">
 
-
-
-<section id="offer-features" class="offer-features">
-  <div class="container">
-    <h2>What <span>We Offer</span> & Our <span>Key Features</span></h2>
-    <p>Our niche‑specific solutions tailored to meet your digital real‑estate needs, backed by innovative strategies to drive your business forward.</p>
-
-    <div class="services-grid">
-      <div class="service-card">
-        <img src="./process.webp" alt="Listing Management Icon">
-        <h3>Listing Management</h3>
-        <p>End‑to‑end management of your property listings — from upload to optimization.</p>
-        <a href="./404.html">Learn more →</a>
-      </div>
-      <div class="service-card">
-        <img src="./virtual-tour.webp" alt="Virtual Tours Icon">
-        <h3>Virtual Tours & Photography</h3>
-        <p>Captivating virtual tours and high‑quality photography to showcase your properties.</p>
-        <a href="./404.html">Learn more →</a>
-      </div>
-      <div class="service-card">
-        <img src="./attraction.webp" alt="Lead Generation Icon">
-        <h3>Marketing & Lead Generation</h3>
-        <p>Drive qualified leads with targeted marketing strategies and automation.</p>
-        <a href="./404.html">Learn more →</a>
-      </div>
+    <!-- COLUMN 1 : LOGO + DESC -->
+    <div class="footer-col fade-up">
+      <button class="click" onclick="window.location.href='./home2.html'">
+        <img src="images/logo.webp" alt="Stackly Logo" class="footer-logo">
+      </button>
+      <p>
+        Stackly is a modern multipurpose business solution delivering
+        consulting, finance, and technology services worldwide.
+      </p>
     </div>
 
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">🚀</div>
-        <h3>Innovative Solutions</h3>
-        <p>We leverage modern technology to deliver cutting‑edge solutions tailored to your needs.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📊</div>
-        <h3>Data‑Driven Strategy</h3>
-        <p>Our decisions are backed by detailed analytics and insights for maximum impact.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🤝</div>
-        <h3>Trusted Partnerships</h3>
-        <p>We build long‑term relationships with our clients based on trust and reliability.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">⏱️</div>
-        <h3>Fast & Efficient</h3>
-        <p>Timely delivery and efficient processes ensure your business goals are met quickly.</p>
-      </div>
-    </div>
-
-    <div class="services-button">
-      <a href="./404.html" class="btn">Explore All Services</a>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<section id="testimonials-terms" class="testimonials-terms-section">
-  <div class="container">
-
-    <h2>What Our <span>Clients Say</span> & <span>Terms</span> of Service</h2>
-    <p class="section-subtitle">Real experiences from clients and the policies that guide our service.</p>
-
-    <!-- ✅ Testimonials -->
-    <div class="testimonials-wrapper">
-
-      <div class="testimonial">
-        <p>“The team delivered outstanding results ahead of schedule. Professional and reliable!”</p>
-        <h4>– Sarah Williams, CEO of TechNova</h4>
-      </div>
-
-      <div class="testimonial">
-        <p>“Their solutions improved our efficiency across the company. Highly recommend!”</p>
-        <h4>– John Miller, Operations Head at RealEstatePro</h4>
-      </div>
-
-      <div class="testimonial">
-        <p>“Amazing support and innovative ideas. We achieved record growth with their strategies.”</p>
-        <h4>– Emily Johnson, Marketing Director at FinGrow</h4>
-      </div>
-
-      <div class="testimonial">
-        <p>“Responsive and results-driven. They turned our vision into reality with great quality.”</p>
-        <h4>– Michael Lee, Founder of GreenBuild</h4>
-      </div>
-
-    </div>
-
-    <!-- ✅ Terms & Conditions -->
-    <div class="terms-box">
-      <h3>Terms & Conditions</h3>
-      <p>Please read these terms and conditions before using our services.</p>
-
-      <ul class="terms-list">
-        <li><strong>Acceptance of Terms:</strong> By using our website or services, you agree to these terms.</li>
-        <li><strong>Use of Services:</strong> Services must be used legally and responsibly.</li>
-        <li><strong>Intellectual Property:</strong> All content belongs to our company and cannot be copied.</li>
-        <li><strong>Privacy Policy:</strong> Personal data is handled safely and respectfully.</li>
-        <li><strong>Limitation of Liability:</strong> Use our services at your own risk.</li>
-        <li><strong>Changes to Terms:</strong> We may update terms at any time.</li>
+    <!-- COLUMN 2 : QUICK LINKS -->
+    <div class="footer-col fade-up">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home 1</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="choose.html">Why Choose Us</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
       </ul>
     </div>
 
+    <!-- COLUMN 3 : EXTRA -->
+    <div class="footer-col fade-up">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="team.html">Team & Achievement</a></li>
+        <li><a href="awards.html">Awards & certifications</a></li>
+        <li><a href="blog.html">blog & faq</a></li>
+        <li><a href="contact 2.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- COLUMN 4 : ADDRESS -->
+    <div class="footer-col fade-up">
+      <h4>Contact</h4>
+
+      <div class="footer-contact">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Salem, Tamilnadu</span>
+      </div>
+
+      <div class="footer-contact">
+        <i class="fa-solid fa-phone"></i>
+        <span>+91 1234567890</span>
+      </div>
+
+      <div class="footer-contact">
+        <i class="fa-solid fa-envelope"></i>
+        <span>info@business.com</span>
+      </div>
+    </div>
+
   </div>
-</section>
 
-
-
-
-
-
-<section id="social-news" class="social-news-section">
-  <div class="container">
-    <h2>Latest News & Social Updates</h2>
-    <p class="section-desc">
-      Catch up on our achievements, media highlights, and important announcements.
+  <!-- BOTTOM FOOTER -->
+  <div class="footer-bottom">
+    <p>
+      Copyright © 2025 All Reserved By Stackly
     </p>
 
-    <div class="news-wrapper">
-
-      <div class="news-card">
-        <div class="icon">🚀</div>
-        <h4>New Partnership</h4>
-        <p>We partnered with TechNova to expand global innovative services.</p>
-        <span class="date">Nov 5, 2025</span>
-      </div>
-
-      <div class="news-card">
-        <div class="icon">🏆</div>
-        <h4>Award Won</h4>
-        <p>Our team received the 2025 Innovation Leadership Award!</p>
-        <span class="date">Oct 28, 2025</span>
-      </div>
-
-      <div class="news-card">
-        <div class="icon">📈</div>
-        <h4>50K Followers</h4>
-        <p>We crossed 50,000 followers on social media! Thank you all.</p>
-        <span class="date">Oct 20, 2025</span>
-      </div>
-
-      <div class="news-card">
-        <div class="icon">📝</div>
-        <h4>Blog Update</h4>
-        <p>New post: "Digital Transformation Trends in Real Estate – 2025"</p>
-        <span class="date">Oct 15, 2025</span>
-      </div>
-
-    </div>
-
-    <div class="news-btn-wrap">
-      <a href="./404.html" class="follow-btn">Visit Our Social Media</a>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-<footer class="footer footer-consulting">
-  <div class="footer-inner">
-    <div class="footer-col about">
-      <h4>About Us</h4>
-      <p>We partner with leadership teams to transform operations & drive sustainable growth.</p>
-    </div>
-    <div class="footer-col services">
-      <h4>Our Services</h4>
-      <ul>
-        <li><a href="./404.html">Strategic Consulting</a></li>
-        <li><a href="./404.html">Digital Transformation</a></li>
-        <li><a href="./404.html">Operations Excellence</a></li>
-      </ul>
-    </div>
-    <div class="footer-col contact">
-      <h4>Contact</h4>
-      <p><a href="./404.html">+91 96882 80062</a></p>
-      <p><a href="./404.html">info@stackly.com</a></p>
-      <p>Chennai, Tamil Nadu, India</p>
-    </div>
-    <div class="footer-col follow">
-      <h4>Follow Us</h4>
-      <ul class="social">
-        <li><a href="./404.html"><img src="./linkedin.webp" alt="LinkedIn" height="30px"></a></li>
-        <li><a href="./404.html"><img src="./instagram.webp" alt="instagram" height="30px"></a></li>
-        <li><a href="./404.html"><img src="./twitter.webp" alt="twitter" height="30px"></a></li>
-        <li><a href="./404.html"><img src="./facebook.webp" alt="facebook" height="30px"></a></li>
-      </ul>
+    <div class="footer-social">
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2025 STACKLY. All rights reserved.</p>
-    <ul class="legal">
-      <li><a href="./404.html">Privacy Policy</a></li>
-      <li><a href="./404.html">Terms of Service</a></li>
-    </ul>
-  </div>
+
 </footer>
 
 
 
-  <script src="./script.js"></script>
+<script>
+let slides = document.querySelectorAll(".saas-slide");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 5000);
+</script>
+
+
+<script>
+  // Mobile menu toggle
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
+
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  }
+
+  // Dropdown toggle (Home)
+  document.querySelectorAll('.has-dropdown .nav-link-wrap').forEach(item => {
+    item.addEventListener('click', () => {
+      item.parentElement.classList.toggle('active');
+    });
+  });
+</script>
+
+
+<script>
+  const fadeElements = document.querySelectorAll(".fade-up");
+
+  const fadeObserver = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  fadeElements.forEach(el => fadeObserver.observe(el));
+</script>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>

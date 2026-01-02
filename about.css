@@ -33,20 +33,15 @@ span{
   padding: 0.75rem 1.5rem;
   background: #007bff;
 }
-.header .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.header .logo img {
-  height: 40px;
-  width: auto;
-}
-.header .logo h2 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: white;
-}
+
+/* Brand & right */
+.right { display: flex; align-items: center; gap: 80px; flex: 0 0 auto; min-width: 0; }
+.brand { display:flex; align-items:center; gap:1px; text-decoration:none; color:inherit; flex: 0 0 auto; }
+.brand img { width:40px; height:40px; border-radius:6px; object-fit:contain; }
+.brand-title { display:flex; flex-direction:column; line-height:1; }
+.brand-title .title { font-weight:700; font-size:16px; color:white; }
+
+
 .header .contact {
   text-align: right;
   display: flex;
@@ -959,7 +954,7 @@ span{
 .footer-consulting a:hover,
 .footer-consulting a:focus {
   color:black;  /* lighter highlight on hover */
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .footer-consulting .footer-inner {
@@ -1087,10 +1082,15 @@ span{
     width: 100%;
   }
 
-  /* .footer-consulting .footer-col h4 {
-    font-size: 1.1rem;
-    padding-bottom: 0.3rem;
-  } */
+  .footer-inner .about .brand img{
+    margin-left: 120px;
+    margin-bottom: 20px;
+  }
+
+  .footer-inner .about .brand .brand-title .title{
+    margin-top: -15px;
+  }
+
   .footer-consulting .footer-col h4 {
     position: relative;
     margin-bottom: 1rem;

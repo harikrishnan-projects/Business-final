@@ -1,6 +1,12 @@
-const hamburger = document.querySelector(".hamburger");
-const navBar    = document.querySelector(".navBar");
+const slides = document.querySelectorAll(".slide");
+let index = 0;
 
-hamburger.addEventListener("click", () => {
-  navBar.classList.toggle("active");
-});
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 5000);
